@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="main.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" >
+	<script src="main.js"></script>
+	<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+	<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+	<title>Berita Harian</title>
+</head>
+<body class="bg-dark">
+	<!--Container-->
+<div class="container">
+	<br>
+    <nav class="navbar border rounded navbar-expand-md navbar-light bg-dark">
+		<a class="navbar-brand font-weight-bold text-white" href="#">Berita Harian</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link text-light" href="#">Home</a>
+				</li>
+        <li class="nav-item">
+					<a class="nav-link text-light" href="#terpopuler">Berita Terpopuler</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-light" href="#terkini">Berita Terkini</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<button type="button" class="btn btn-light btn-round" data-toggle="modal" data-target="#loginModal">
+						Masuk
+					</button>  
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="modal fade" id="loginModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header border-bottom-0">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-title text-center">
+						<h4>Masuk</h4>
+					</div>
+				  	<div class="d-flex flex-column text-center">
+						<form>
+							<div class="form-group">
+								<input type="email" class="form-control" id="email1"placeholder="Masukkan email">
+					  		</div>
+					  		<div class="form-group">
+								<input type="password" class="form-control" id="password1" placeholder="Masukkan password">
+					  		</div>
+					  		<button type="button" class="btn btn-dark btn-block btn-round">Login</button>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer d-flex justify-content-center">
+					<div class="signup-section">Belum punya akun? <a href="#a" class="text-blue"> Daftar</a>.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+	<h4 id="terpopuler" class="mt-4 text-white">Berita Terpopuler</h4>
+    <div class="row">
+        <div class="col-12 pb-5">
+            <section class="row">
+                <div class="col-12 col-md-6 pb-0 pb-md-3 pt-2 pr-md-1">
+                    <div id="featured" class="carousel slide carousel" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card border-0 rounded-0 text-light overflow zoom">
+                                    <div class="position-relative">
+        
+                                        <div class="ratio_left-cover-1 image-wrapper">
+                                            <a href="https://news.detik.com/foto-news/d-5637811/foto-foto-rekam-jejak-sepekan-penerapan-ppkm-darurat">
+                                                <img class="" height="465"
+                                                     src="https://akcdn.detik.net.id/community/media/visual/2021/07/03/hening-dan-sepi-suasana-ppkm-darurat-di-jalan-protokol-ibu-kota-5_169.jpeg?w=700&q=90"
+                                                     alt="Bootstrap news template">
+                                            </a>
+                                        </div>
+                                        <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+        
+                                            <a href="https://news.google.com/">
+                                                <h2 class="h3 post-title text-white my-1">
+                                                  Rekam Jejak Sepekan Penerapan PPKM Darurat</h2>
+                                            </a>
+                                            <!-- meta title -->
+                                            <div class="news-meta">
+                                                <span class="news-author">by Sabrina Lydia</span>
+                                                <span class="news-date">Oct 19, 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border-0 rounded-0 text-light overflow zoom">
+                                    <div class="position-relative">
+        
+                                        <div class="ratio_left-cover-1 image-wrapper">
+                                            <a href="https://news.detik.com/berita/d-5772649/dprd-kritik-wacana-mahasiswa-usu-ditangkap-bnn-jadi-duta-antinarkoba">
+                                                <img class="" height="465"
+                                                     src="https://akcdn.detik.net.id/community/media/visual/2021/10/11/konferensi-pers-penangkapan-31-orang-di-kampus-fib-usu-4_169.jpeg?w=700&q=90"
+                                                     alt="Bootstrap portal template">
+                                            </a>
+                                        </div>
+                                        <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+        
+                                            <a href="https://news.detik.com/berita/d-5772649/dprd-kritik-wacana-mahasiswa-usu-ditangkap-bnn-jadi-duta-antinarkoba">
+                                                <h2 class="h3 post-title text-white my-1">Mahasiswa USU Ditangkap BNN
+                                                   </h2>
+                                            </a>
+                                            <!-- meta title -->
+                                            <div class="news-meta">
+                                                <span class="news-author">by Sabrina Lydia</span>
+                                                <span class="news-date">Oct 19, 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end item slider-->
+                        </div>
+                        <!--end carousel inner-->
+                    </div>
+                    
+                </div>
+                <div class="col-12 col-md-6 pt-2 pl-md-1 mb-3 mb-lg-4">
+                    <div class="row">
+                        <div class="col-6 pb-1 pt-0 pr-1">
+                            <div class="card border-0 rounded-0 text-white overflow zoom">
+                                <div class="position-relative">
+    
+                                    <div class="ratio_right-cover-2 image-wrapper">
+                                        <a href="https://tekno.kompas.com/read/2021/10/18/12080027/begini-alur-pemutusan-akses-pinjol-ilegal-oleh-kominfo/">
+                                            <img class="" height="465"
+                                                 src="https://asset.kompas.com/crops/bx52NxF0DGD4hQ9FTC6kWw9AypQ=/15x14:997x669/750x500/data/photo/2019/07/26/5d3ad90362329.jpg"
+                                                 alt="Responsive image">
+                                        </a>
+                                    </div>
+                                    <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+    
+                                        <a href="https://tekno.kompas.com/read/2021/10/18/12080027/begini-alur-pemutusan-akses-pinjol-ilegal-oleh-kominfo">
+                                            <h2 class="h5 text-white my-1">Alur Pemutusan Pinjol Ilegal oleh Kominfo</h2>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-6 pb-1 pl-1 pt-0">
+                            <div class="card border-0 rounded-0 text-white overflow zoom">
+                                <div class="position-relative">
+    
+                                    <div class="ratio_right-cover-2 image-wrapper">
+                                        <a href="https://money.kompas.com/read/2021/10/19/050700226/ini-daftar-proyek-kereta-cepat-yang-alami-pembengkakan-biaya?page=all">
+                                            <img class=""
+                                                 src="https://asset.kompas.com/crops/YIJV43i-NL01dqo5hVZxwxga1cM=/0x0:1200x800/750x500/data/photo/2021/03/28/605fd6dee65cc.jpg"
+                                                 alt="bootstrap templates for blog">
+                                        </a>
+                                    </div>
+                                    <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+    
+                                        <a href="https://money.kompas.com/read/2021/10/19/050700226/ini-daftar-proyek-kereta-cepat-yang-alami-pembengkakan-biaya?page=all">
+                                            <h2 class="h5 text-white my-1">
+                                              Kereta Cepat Mengalami Pembengkakan Biaya</h2>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                        
+                        <!--end news box-->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <h4 id="terkini" class="mt-2 text-white">Berita Terkini</h4>
+
+    <div class="container-fluid border rounded mb-5 pt-3">
+        <div class="row ">
+          <div class="col">
+              <div class="card mb-3" style="max-width: 640px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://akcdn.detik.net.id/visual/2019/08/20/1a84d320-8602-4c58-a51d-7b84bf4e2adc_169.jpeg?w=650" class="" height="200" width="200" alt="....">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                          <a href="https://news.google.com/">
+                              <h5 class="card-title">
+                                OTT KPK di Riau, Penyidik Amankan Pejabat 
+                          </a>
+                          <p class="card-text text-sm-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas dignissim urna, id accumsan justo sagittis eu.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 21 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+    
+          <div class="col">
+            <div class="card mb-3" style="max-width: 640px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://akcdn.detik.net.id/visual/2021/10/18/penyeberangan-destinasi-pariwisata-di-bali-2_169.jpeg?w=650" class="" height="200" width="200" alt="....">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                        <a href="https://news.google.com/">
+                            <h5 class="card-title">
+                                Syarat Perjalanan Terbaru PPKM Level 2 Jawa-Bali
+                              </h5>
+                        </a>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas dignissim urna, id accumsan justo sagittis eu.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 23 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    
+        </div>
+    
+        <div class="row ">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 640px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://akcdn.detik.net.id/visual/2018/12/11/2bbae908-500c-4bce-8a63-f7e36f5ae7f0_169.jpeg?w=650" class="" height="200" width="200" alt="....">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                        <a href="https://news.google.com/">
+                            <h5 class="card-title">
+                                Krisis Energi juga Hantui Singapura
+                              </h5>
+                        </a>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas dignissim urna, id accumsan justo sagittis eu.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 25 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    
+          <div class="col">
+            <div class="card mb-3" style="max-width: 640px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://akcdn.detik.net.id/visual/2017/07/07/2d110e80-e68d-4662-8480-27dea589709d_169.jpg?w=650" class="" height="200" width="200" alt="....">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                        <a href="https://news.google.com/">
+                            <h5 class="card-title">
+                                Hubungan Dagang RI-Turki di Tengah Politik
+                              </h5>
+                        </a>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas dignissim urna, id accumsan justo sagittis eu.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 27 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    
+        </div>
+    
+    
+    
+        </div>
+    
+      </div>     
+
+    
+    <div class="row mb-4">
+        <div class="col-12 text-center">
+            <p>Sabrina Lydia Simanjuntak | PWEB A</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
